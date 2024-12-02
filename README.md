@@ -33,11 +33,13 @@ Before you begin, ensure you have the following:
    ```bash
    git clone https://github.com/zibusisojnduna/Task-24-Restful-Api-for-Online-Recipe
    cd Task 24 Restful-Api-for-Online-Recipe
+   ```
 
 2.   **Install Dependencies**
 Run the following command to install required packages:
 ```bash
 npm install
+```
 
 3. **Configure MongoDB Atlas**
 
@@ -49,11 +51,13 @@ Copy the connection string from MongoDB Atlas.
 In the root directory, create a .env file and add the following line (replacing with your actual connection string):
 ```env
 MONGO_URI=your-mongodb-connection-string
+```
 
 5. **Start the Server**
 After setting up the environment, run the following command to start the server:
 ```bash
 node index.js
+```
 
 The server will run on http://localhost:3000
 
