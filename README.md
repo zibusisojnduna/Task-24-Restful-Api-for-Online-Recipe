@@ -61,9 +61,11 @@ node index.js
 
 The server will run on http://localhost:3000
 
-## API Endpoint
+## API Endpoints
 **POST/recipes**
+
 Create a new recipe
+
 -**Request Body:**
 ```json
 {
