@@ -36,6 +36,7 @@ Before you begin, ensure you have the following:
    ```
 
 2.   **Install Dependencies**
+
 Run the following command to install required packages:
 ```bash
 npm install
@@ -64,7 +65,7 @@ node index.js
 The server will run on http://localhost:3000
 
 ## API Endpoints
-**POST/recipes**
+**POST**/recipes
 
 Create a new recipe
 
@@ -76,6 +77,65 @@ ingredients:["ingredient 1", "ingredient 2"],
 instructions:"Recipe instruction here"
 }
 ```
+-**Response**:Returns the created recipe object
+
+**GET**/recipes
+
+Get all recipes with pagination.
+
+-**Query Parameters:**
+
+-page(default:1)
+
+-pageSize(default:10)
+
+-**Response:** Returns a list of recipes with pagination information.
+
+**GET**/recipes/:id
+
+Get a specific recipe by id.
+
+-**Response:** Returns the recipe object with the specified id.
+
+**PUT**/recipe/:id
+
+Update a recipe by id.
+
+-**Request Body:**
+
+```json
+{
+name:"Updated recipe name",
+ingredients:["new ingredient 1", "new ingredient 2"],
+instructions:"Updated ingredient instructions"
+}
+```
+
+-**Response:** Returns the updated recipe object.
+
+**DELETE**/recipe/:id
+
+Delete a recipe by its id.
+
+-**Response:** Returns a message indicating if the deletion was successful.
+
+## Validation
+
+The API validates the following fields:
+
+-**Required Fields:** name, ingredients and intructions must be present in the request body.
+-**Data Types:** Ensure fields like name(string), ingredients(array) and instructions(string) follow the correct data types.
+-**Custom Validation:** Email and password fields (if implemented) would require custom regex for format validation.
+
+## Error Handling
+
+-**404:Bad Request:** If required fields are missing or data is invalid.
+-**404:Not Found:** If the requested recipe does not exist.
+-**500:Internal Server Error** For any server-sider issues.
+
+## Testing
+
+You can test all API endpoints using **Insomnia** or **Postman** .
 
 
 
