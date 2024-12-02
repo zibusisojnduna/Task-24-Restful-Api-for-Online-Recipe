@@ -62,4 +62,18 @@ node index.js
 The server will run on http://localhost:3000
 
 ## API Endpoint
-POST
+**POST/recipes**
+Create a new recipe
+-**Request Body:**
+```json
+{
+name:"recipe name",
+ingredients:["ingredient 1", "ingredient 2"],
+instructions:"Recipe instruction here"
+}
+```
+
+
+
+
+
