@@ -48,12 +48,14 @@ Create a database user and whitelist your IP address.
 Copy the connection string from MongoDB Atlas.
 
 4. **Create a .env File**
+   
 In the root directory, create a .env file and add the following line (replacing with your actual connection string):
 ```env
 MONGO_URI=your-mongodb-connection-string
 ```
 
 5. **Start the Server**
+
 After setting up the environment, run the following command to start the server:
 ```bash
 node index.js
