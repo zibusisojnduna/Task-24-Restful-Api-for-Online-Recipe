@@ -124,13 +124,17 @@ Delete a recipe by its id.
 The API validates the following fields:
 
 -**Required Fields:** name, ingredients and intructions must be present in the request body.
+
 -**Data Types:** Ensure fields like name(string), ingredients(array) and instructions(string) follow the correct data types.
+
 -**Custom Validation:** Email and password fields (if implemented) would require custom regex for format validation.
 
 ## Error Handling
 
 -**404:Bad Request:** If required fields are missing or data is invalid.
+
 -**404:Not Found:** If the requested recipe does not exist.
+
 -**500:Internal Server Error** For any server-sider issues.
 
 ## Testing
