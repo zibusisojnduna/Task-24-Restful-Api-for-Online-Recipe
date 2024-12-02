@@ -135,7 +135,7 @@ The API validates the following fields:
 
 -**404:Not Found:** If the requested recipe does not exist.
 
--**500:Internal Server Error** For any server-sider issues.
+-**500:Internal Server Error:** For any server-sider issues.
 
 ## Testing
 
